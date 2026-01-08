@@ -7,12 +7,12 @@
 # **Installation**
 
 # Clone the repository:
-git clone https://github.com/Mandisalovet/llm_chat_app.git
-cd llm_chat_app
+#git clone https://github.com/Mandisalovet/llm_chat_app.git
+#cd llm_chat_app
 
 # Create and activate a Conda environment:
-conda create -n astro_env python=3.9 -y
-conda activate astro_env
+#conda create -n astro_env python=3.9 -y
+#conda activate astro_env
 
 # Install dependencies:
 pip install streamlit openai
