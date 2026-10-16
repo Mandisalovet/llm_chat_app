@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mandisa's Basic LLM Chat App built with Python, Streamlit and OpenAI.">
+    <title>Mandisa | LLM Chat App</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f8fa;
+            color: #202b3c;
+            line-height: 1.7;
+        }
+
+        header {
+            padding: 24px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            color: #202b3c;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .hero {
+            max-width: 850px;
+            margin: 90px auto 70px;
+            padding: 0 24px;
+            text-align: center;
+        }
+
+        .tag {
+            color: #52769e;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: clamp(36px, 6vw, 58px);
+            line-height: 1.15;
+            margin: 20px 0;
+        }
+
+        .intro {
+            max-width: 650px;
+            margin: auto;
+            color: #687386;
+            font-size: 17px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 32px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 23px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #263c59;
+            color: white;
+        }
+
+        .secondary {
+            border: 1px solid #263c59;
+            color: #263c59;
+        }
+
+        .content {
+            max-width: 850px;
+            margin: auto;
+            padding: 20px 24px 80px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #e7eaf0;
+            border-radius: 12px;
+            padding: 28px;
+            margin-bottom: 22px;
+        }
+
+        h2 {
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: #687386;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        .skills span {
+            background: #edf2f8;
+            color: #385474;
+            padding: 7px 13px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        .notice {
+            margin-top: 18px;
+            padding: 14px;
+            background: #fff8e8;
+            border-radius: 7px;
+            color: #795c22;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid #e7eaf0;
+            color: #687386;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #385474;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <a href="https://mandisalovet.github.io/">Mandisa Love</a>
+    <a href="https://github.com/Mandisalovet">GitHub ↗</a>
+</header>
+
+<section class="hero">
+    <p class="tag">Python · Artificial Intelligence · Streamlit</p>
+
+    <h1>Mandisa's Basic LLM Chat App</h1>
+
+    <p class="intro">
+        A simple conversational AI application built with Python,
+        Streamlit and the OpenAI API. This project explores how
+        language models can be integrated into interactive applications.
+    </p>
+
+    <div class="buttons">
+        <a class="button primary"
+           href="https://llmchatapp-mandilovet.streamlit.app/"
+           target="_blank" rel="noopener noreferrer">
+            Open Live Application ↗
+        </a>
+
+        <a class="button secondary"
+           href="https://github.com/Mandisalovet/llm_chat_app"
+           target="_blank" rel="noopener noreferrer">
+            View Source Code ↗
+        </a>
+    </div>
+</section>
+
+<main class="content">
+
+    <section class="card">
+        <h2>About the Project</h2>
+        <p>
+            This application provides a chat interface where users
+            can submit questions and receive responses from an
+            OpenAI language model. It uses Streamlit session state
+            to maintain conversation history and supports streamed
+            responses.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Features</h2>
+        <p>
+            Interactive chat interface, conversational history,
+            OpenAI API integration and streamed AI responses.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Technologies</h2>
+        <p>Tools and technologies used to build the application:</p>
+
+        <div class="skills">
+            <span>Python</span>
+            <span>Streamlit</span>
+            <span>OpenAI API</span>
+            <span>Git</span>
+            <span>GitHub</span>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Running the Application</h2>
+        <p>
+            Clone the repository, install the dependencies,
+            configure your OpenAI API key using Streamlit Secrets,
+            and run the application using Streamlit.
+        </p>
+
+        <div class="notice">
+            The application is deployed, but AI responses are
+            temporarily unavailable because the OpenAI API account
+            has exhausted its credits.
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    Built by Mandisa Love Tshabalala ·
+    <a href="https://github.com/Mandisalovet">GitHub</a>
+    <br>
+    <a href="https://mandisalovet.github.io/">
+        Back to my portfolio
+    </a>
+</footer>
+
+</body>
+</html>
